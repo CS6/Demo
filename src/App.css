@@ -22,6 +22,20 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+  position: absolute;
+}
+
+.App-float{
+  /* background-color: #282c34; */
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  position: relative;
+
 }
 
 .App-link {
@@ -35,4 +49,34 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.content {
+  width: 120vw;
+  background-color:  "#FFCC00";
+  text-align:center;
+  -moz-transform:rotate(5deg);
+  -webkit-transform:rotate(5deg);
+  -o-transform:rotate(5deg);
+  -ms-transform:rotate(5deg);
+  transform:rotate(5deg);
+}
+
+.KeepMarquee-content{
+    width: 120vw;
+    background-color:  "#FFCC00";
+    text-align:center;
+    -moz-transform:rotate(-10deg);
+    -webkit-transform:rotate(-10deg);
+    -o-transform:rotate(-10deg);
+    -ms-transform:rotate(-10deg);
+    transform:rotate(-10deg);
+}
+
+.box {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
 }

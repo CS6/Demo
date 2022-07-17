@@ -1,0 +1,78 @@
+@import url('https://rsms.me/inter/inter.css');
+
+@import url(//fonts.googleapis.com/earlyaccess/kokoro.css);
+
+/* @font-face {
+  font-family: "Honoka";
+  src: url("/fonts/honokamin.woff") format("woff"),
+    url("/fonts/honokamin.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Kaiti";
+  src: url("/fonts/Kaiti-SC-Bold.ttf") format("truetype");
+} */
+
+
+/* 
+.Kokoro{
+  font-family: 'Kokoro', serif;
+}
+
+.Honoka{
+  font-family: "Honoka", serif;
+}
+
+.Kaiti {
+  font-family: "Kaiti", Black;
+font-style: normal;
+font-weight: 400;
+} */
+
+.dayuan-menu {
+  font-family: 'Inter var', sans-serif;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  color: #808080;
+  padding: 20px;
+  pointer-events: none;
+  justify-content: flex-start;
+  align-items: flex-end;
+  flex-direction: row;
+  font-size: 10px;
+  line-height: 1.5em;
+}
+
+.dayuan-menu > div {
+  word-wrap: none;
+  word-break: none;
+  white-space: pre;
+  padding-left: 25px;
+  padding-right: 25px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.dayuan-menu > div b {
+  font-weight: 600;
+  color: #b0b0b0;
+}
+
+.dayuan-menu a {
+  pointer-events: all;
+  cursor: pointer;
+  color: inherit;
+  text-decoration: none;
+}
+
+.dayuan-menu a:hover {
+  text-decoration: underline;
+  color: inherit;
+}
+
