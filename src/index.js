@@ -3,13 +3,13 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 // import App from './App';
 // import App from './3DScene/inPage/App'
-import WebBook from './3DScene/inPage/WebBook'
-import WebuseSplineAppBook from './3DScene/inPage/useSplineApp'
+// import WebBook from './3DScene/inPage/WebBook'
+// import WebuseSplineAppBook from './3DScene/inPage/useSplineApp'
 
 
 
 
-import DMarquee from './DMarquee';
+// import DMarquee from './DMarquee';
 import DocumentPaper from './DocumentPaper';
 import reportWebVitals from './reportWebVitals';
 import Intro from "./Intro"

@@ -3,8 +3,8 @@ import Document, { BackgroundPaper } from "./Paper";
 
 import { Doc } from "./Title"
 import useWindowDimensions from "./util/useWindowDimensions";
-import { useLayoutEffect, useEffect, useRef, useState } from 'react'
-import Scene from "./3DScene/Scene"
+import { useEffect, useRef, useState } from 'react'
+// import Scene from "./3DScene/Scene"
 import WebBook from './3DScene/inPage/WebBook'
 
 import { MyLog, Lifebox, NFT, BBT, Capture } from "./Logo"
