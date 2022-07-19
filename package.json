@@ -1,6 +1,5 @@
 {
   "name": "my-test-center",
-  "homepage": "http://dayuan.dev/Demo/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

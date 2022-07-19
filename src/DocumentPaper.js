@@ -19,7 +19,7 @@ export default function DocumentPaper() {
   const [BGHeight, setBGHeight] = useState();
 
   const [ready, set] = useState(false)
-  const [_index, setIndex] = useState(2)
+  const [_index, setIndex] = useState(4)
 
 
   // $(window).on("load", () => {
@@ -38,8 +38,8 @@ export default function DocumentPaper() {
     demo_type: "web",
     Logo: "/img/BBT_B.svg",
     Logo_OG: "/img/BBT.svg",
-    Title: "自行車騎行",
-    link: "",
+    Title: "自行車旅遊地圖\n遊戲化體驗APP",
+    link: "https://dayuan.dev/2019/08/18/%E5%A5%B6%E6%B2%B9%E8%A1%8C-%E5%B0%88%E5%8A%A9%E6%96%BC%E8%87%AA%E8%A1%8C%E8%BB%8A%E6%97%85%E9%81%8A%E7%9A%84%E9%81%8A%E6%88%B2app/",
     Docs: "自行車騎行\n"
   }, {
     index: 1,

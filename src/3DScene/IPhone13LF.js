@@ -16,7 +16,8 @@ export default function IPhone13LF({ ready, app, open, ...props }) {
   const image = useRef()
   const group = useRef()
   const vec = new THREE.Vector3()
-  const colorMap = useLoader(TextureLoader, '/img/Lifebox/Lifebox01拷貝.png')
+  const colorMap = useLoader(TextureLoader, app===0?'/img/Lifebox/Lifebox01拷貝.png':'/img/Lifebox/Lifebox02拷貝.png')
+
   // colorMap.flipY = false;
   // colorMap.repeat.set(0.5,1);
   colorMap.center = new THREE.Vector2(0.5, 0.5);

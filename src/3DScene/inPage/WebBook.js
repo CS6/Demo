@@ -157,12 +157,15 @@ export default function WebBook({ type }) {
 
             {type === 'IPhone' &&
               <group rotation={[0, Math.PI, 0]} position={[0, 5, 0]} onClick={(e) => (e.stopPropagation(), setOpenIpad(!openIpad))}>
-                <IPhone13LF castShadow open={false} scale={0.05} rotation={[0, Math.PI / 8, 0]} position={[-15, 5, -30]} />
+                <IPhone13LF app={0} castShadow open={false} scale={0.05} rotation={[0, Math.PI / 8, 0]} position={[-20, 5, -30]} />
+                <IPhone13LF app={1} castShadow open={false} scale={0.05} rotation={[-Math.PI / 8, -Math.PI / 8, 0]} position={[0, 0, -40]} />
+
               </group>}
             {type === "IPad" &&
               <group rotation={[0, Math.PI, 0]} position={[0, 5, 0]} onClick={(e) => (e.stopPropagation(), setOpenIpad(!openIpad))}>
                 <IPad castShadow open={true} scale={0.05} rotation={[0, Math.PI / 7, 0]} position={[-8, 0, 0]} />
-                <IPhone13 app={"MyLog"} ready={true}  castShadow open={true} scale={0.015} rotation={[0, -Math.PI / 20, 0]} position={[1, -3, 0]} />
+                <IPhone13 app={"MyLog"} ready={true} castShadow open={true} scale={0.015} rotation={[0, -Math.PI / 20, 0]} position={[1, -3, 0]} />
+                <ContactShadows rotation-x={Math.PI / 2} position={[-1.5, -4.5, 0]} opacity={1} width={20} height={20} blur={1} far={4.5} />
               </group>
             }
             {type === "Camera" &&
@@ -170,8 +173,8 @@ export default function WebBook({ type }) {
                 {/* <IPhone  rotation={[0, -Math.PI/2, 0]} scale={0.01} /> */}
 
                 <group onClick={(e) => (e.stopPropagation(), setUseCamera(!useCamera))}>
-                  <IPhoneSE  open={useCamera} scale={0.01} rotation={[0, Math.PI / 7, 0]} position={[0, 0, 0]} />
-
+                  <IPhoneSE open={useCamera} scale={0.01} rotation={[0, Math.PI / 7, 0]} position={[0, 0, 0]} />
+                  <ContactShadows rotation-x={Math.PI / 2} position={[-1.5, -4.55, 0]} opacity={1} width={20} height={20} blur={1} far={4.5} />
                 </group>
                 {/* <Model /> */}
                 {/* <MacModel /> */}
@@ -179,6 +182,7 @@ export default function WebBook({ type }) {
               </group>}
             {type === "MacBook" && <group rotation={[0, Math.PI, 0]} onClick={(e) => (e.stopPropagation(), setOpen(!open))}>
               <MBPRModel castShadow open={open} hinge={props.open.to([0, 1], [1.575, -0.425])} />
+              <ContactShadows rotation-x={Math.PI / 2} position={[-1.5, -4.5, 0]} opacity={1} width={20} height={20} blur={1} far={4.5} />
             </group>}
 
             {/* <group rotation={[0, Math.PI, 0]}  onClick={(e) => (e.stopPropagation(), setOpen(!open))}>
@@ -186,7 +190,7 @@ export default function WebBook({ type }) {
         </group> */}
             <Environment preset="city" />
           </Suspense>
-          <ContactShadows rotation-x={Math.PI / 2} position={[-1.5, -4.5, 0]} opacity={1} width={20} height={20} blur={1} far={4.5} />
+          {/* <ContactShadows rotation-x={Math.PI / 2} position={[-1.5, -4.5, 0]} opacity={1} width={20} height={20} blur={1} far={4.5} /> */}
           {/* <OrbitControls enablePan={false} enableZoom={false} minPolarAngle={Math.PI / 4} maxPolarAngle={Math.PI / 4} /> */}
           {/* <OrbitControls /> */}
         </group>
