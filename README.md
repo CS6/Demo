@@ -68,3 +68,12 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+
+
+
+
+ sddivid@sddividde-MacBook-Pro-6  ~/Downloads  gltf-pipeline -i /Users/sddivid/Downloads/emoji_mobile_copy.gltf   -o emoji_mobile_Draco.gltf
+Total: 28.895ms
+ sddivid@sddividde-MacBook-Pro-6  ~/Downloads  npx @react-three/gltfjsx /Users/sddivid/Downloads/emoji_mobile_Draco.gltf

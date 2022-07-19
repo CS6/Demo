@@ -4,7 +4,7 @@ import { convert } from "./util/convert.js";
 import { useState, useEffect } from "react";
 
 let texts = `
-# 大声大会
+# 開源社群
 
 &nbsp;
 

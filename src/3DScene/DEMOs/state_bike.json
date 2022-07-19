@@ -1,0 +1,24 @@
+{
+  "sheetsById": {
+    "sheet": {
+      "staticOverrides": {
+        "byObject": {
+          "Iphone_Y": {
+            "position": {
+              "x": 1.3,
+              "y": -8.5,
+              "z": -3
+            },
+            "rotation": {
+              "x": -1,
+              "y": 0.14,
+              "z": 0.22
+            }
+          }
+        }
+      }
+    }
+  },
+  "definitionVersion": "0.4.0",
+  "revisionHistory": ["Tge7BS18cNYV_GC8"]
+}

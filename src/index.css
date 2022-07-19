@@ -19,7 +19,7 @@ code {
     url("/fonts/honokamin.ttf") format("truetype");
 }
 
-@font-face {
+/* @font-face {
   font-family: "Kaiti";
   src: url("/fonts/Kaiti-SC-Bold.ttf") format("truetype");
 }
@@ -31,7 +31,7 @@ code {
 @font-face {
   font-family: "KaiTi";
   src: url("/fonts/KaiTi.ttf") format("truetype");
-}
+} */
 
 .App-demo-background {
   background-color: #0a0a0a;
@@ -54,13 +54,13 @@ code {
   height: 100%;
   width: 100%;
   display: flex;
-  justify-content : center;
+  justify-content: center;
   align-items: center;
   text-align: center;
   z-index: 0;
 }
 
- .paper-background {
+.paper-background {
   z-index: 1;
   display: flex;
   /* background-color: #F2F2E8; */
@@ -76,12 +76,28 @@ code {
 .placeholder {
   display: flex;
   height: 0px;
-    background-color: aqua;
+  background-color: aqua;
 }
 
-
-
-
+.DocumentPaper-re {
+  width: 100vw;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  font-family: "Honoka", serif;
+  /* writing-mode: vertical-rl; */
+  margin: 0;
+  display: flex;
+  flex-direction: row-reverse;
+  /* justify-content : space-between; */
+  align-items: space-between;
+  position: relative;
+  /* align-items: center; */
+  /* background-color: aqua; */
+}
 
 .DocumentPaper {
   width: 100vw;
@@ -96,7 +112,7 @@ code {
   margin: 0;
   display: flex;
   flex-direction: column;
-  justify-content : space-between;
+  justify-content: space-between;
   position: relative;
   /* align-items: center; */
   /* background-color: aqua; */
@@ -107,7 +123,7 @@ code {
   justify-content: center;
   align-items: center;
   height: 100%;
-  width: 70%;
+  width: 80%;
   position: absolute;
   top: 0;
   left: 0;
@@ -126,6 +142,54 @@ code {
   /* background-color:#0a0a0a; */
   /* width: 100vh; */
 }
+
+.side-container {
+  display: flex;
+  writing-mode: vertical-rl;
+}
+
+.route-container {
+  position: absolute;
+  right: 50px;
+  bottom: 0px;
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  height: 10%;
+  justify-content: center;
+  align-items: end;
+  text-align: center;
+  padding-bottom: 50px;
+}
+
+.APP-Logo {
+  margin-right: 10px;
+  height: 55px !important;
+  width: 55px !important;
+}
+
+.APP-Logo:hover {
+  transform: scale(1.5, 1.5);
+  margin-left: 10px;
+  margin-right: 20px;
+  margin-bottom: 15px;
+
+  /* height: 110px !important;
+  width: 110px !important; */
+}
+
+.info-container {
+  display: flex;
+  margin-right: 5vw;
+  flex-direction: column;
+  z-index: 20;
+  margin-top: 30px;
+
+  /* position: relative; */
+  /* background-color:#0a0a0a; */
+  /* width: 100vh; */
+}
+
 .title-container {
   margin-top: 50px;
   /* border-top: 1px solid #e3e3db;
@@ -150,10 +214,21 @@ code {
   letter-spacing: 0.5em;
 
   display: flex;
-  justify-content : start;
+  justify-content: start;
   align-items: center;
   text-align: center;
 }
+
+.tag-container {
+  margin-top: 50px;
+  /* border-top: 1px solid #e3e3db;
+  border-bottom: 1px solid #e3e3db;
+  border-left: 1px solid #e3e3db; */
+  /* border-top: 1px solid #c5c5be;
+  border-bottom: 1px solid #c5c5be;
+  border-left: 1px solid #c5c5be; */
+}
+
 .info-card {
   width: 50px;
   display: flex;
@@ -162,7 +237,7 @@ code {
 }
 
 .info-card-name {
-  flex: 4;
+  flex: 5;
   width: 100%;
   background-color: #73dcb6;
   font-family: "Noto Serif CJK TC";
@@ -172,9 +247,10 @@ code {
   line-height: 34px;
   letter-spacing: 0.25em;
   display: flex;
-  justify-content : center;
+  justify-content: center;
   align-items: center;
   text-align: center;
+  padding-top: 5px;
 }
 
 .info-card-logo {
@@ -186,14 +262,56 @@ code {
   font-family: "Noto Sans TC";
   font-style: normal;
   font-weight: 700;
-  font-size: 24px;
+  font-size: 22px;
   line-height: 34px;
   display: flex;
-  justify-content : start;
+  justify-content: start;
   align-items: center;
   text-align: center;
 }
 
+.info-tag {
+  /* width: 50px; */
+  display: flex;
+  flex-direction: row;
+  /* color: #0a0a0a; */
+}
+
+.info-tag-line {
+  width: 8px;
+  background-color: #0a0a0a;
+  height: 70%;
+}
+
+.info-link {
+  background-color: #FFF;
+  padding-top:10px ;
+  padding-bottom:10px ;
+
+  font-size: 22px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  text-align: center;
+}
+
+.info-name-tag {
+  width: 100%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 5px;
+  padding-right: 5px;
+
+  font-family: "Noto Sans TC";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 34px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  text-align: center;
+}
 
 /* font-family: DFKai-sb; */
 

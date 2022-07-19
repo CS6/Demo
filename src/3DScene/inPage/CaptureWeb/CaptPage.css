@@ -1,0 +1,95 @@
+/* @import url('https://rsms.me/inter/inter.css'); */
+/* 
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+main,
+#root {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: inter;
+  color: black;
+  background: #202025;
+}
+
+.content {
+  width: 334px;
+  height: 216px;
+  background: #f0f0f0;
+  border-radius: 3px;
+  overflow-y: auto;
+  padding: 0;
+}
+
+.wrapper {
+  padding: 10px;
+  width: 668px;
+  height: 432px;
+  transform: scale(0.5);
+  transform-origin: top left;
+}
+
+.webside {
+  width: 334px;
+  height: 216px;
+}
+
+#my-iframe {
+  /* position: absolute; */
+  /* left: -400px;
+  top: -170px; */
+  width: 1080px;
+  height: 1080px;
+  transform: scale(0.1);
+  transform-origin: 0 0;
+  /* -ms-transform: scale(0.001);
+  -ms-transform-origin: 0 0;
+  -moz-transform: scale(0.001);
+  -moz-transform-origin: 0 0;
+  -o-transform: scale(0.001);
+  -o-transform-origin: 0 0;
+  -webkit-transform: scale(0.001);
+  -webkit-transform-origin: 0 0;
+}
+ */
+.content_se3 {
+  width: 360px;
+  height: 780px;
+  background: #f0f0f0;
+  border-radius: 40px;
+  overflow-y: auto;
+  padding: 0;
+  position: relative;
+}
+
+.webside_se3 {
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  /* transform: scale(0.1); */
+}
+
+.iframe_se3 {
+  width: 100%;
+  height: 100%;
+  /* transform: scale(1); */
+}
+
+.svgs {
+  width: 360px;
+  height: 780px;
+}
+
+.svgs-logo {
+  width: 360px;
+  height: 900px;
+}

@@ -41,10 +41,9 @@ export default function Title({ content = "" }) {
         <div className="Document">
             <div className="container-wrapper" style={{ height: containerHeight }}>
                 <div className="container">
-                    {/* <h1 id="大声大会" style="margin-block-start: 0px;"><div className="tategaki-character tategaki-none">大</div><div className="tategaki-character tategaki-none">声</div><div className="tategaki-character tategaki-none">大</div><div className="tategaki-character tategaki-none">会</div></h1> */}
-                    <h1 id="大声大会" style={{ marginBlockStart: "0px" }}>
+                    {/* <h1 id="開源社群" style="margin-block-start: 0px;"><div className="tategaki-character tategaki-none">大</div><div className="tategaki-character tategaki-none">声</div><div className="tategaki-character tategaki-none">大</div><div className="tategaki-character tategaki-none">会</div></h1> */}
+                    <h1 id="開源社群" style={{ marginBlockStart: "0px" }}>
                         <div className="tategaki-character tategaki-none">開</div>
-                        <div className="tategaki-character tategaki-none">發</div>
                         <div className="tategaki-character tategaki-none">者</div>
                         <div className="tategaki-character tategaki-none">札</div>
                         <div className="tategaki-character tategaki-none">記</div>
@@ -55,10 +54,10 @@ export default function Title({ content = "" }) {
                         <div className="tategaki-character tategaki-none">大<div className="furigana">Big</div></div>
                         <div className="tategaki-character tategaki-none">元<div className="furigana furigana-crushed"> Meta<div className="furigana-crushed-check"></div></div></div>
                         <div className="tategaki-character">　</div>
-                        <div className="tategaki-character tategaki-none">大<div className="furigana">おお</div></div>
-                        <div className="tategaki-character tategaki-none">声<div className="furigana">ごえ</div></div>
-                        <div className="tategaki-character tategaki-none">大<div className="furigana">たい</div></div>
-                        <div className="tategaki-character tategaki-none">会<div className="furigana">かい</div></div>
+                        <div className="tategaki-character tategaki-none">開<div className="furigana">おお</div></div>
+                        <div className="tategaki-character tategaki-none">源<div className="furigana">ごえ</div></div>
+                        <div className="tategaki-character tategaki-none">社<div className="furigana">たい</div></div>
+                        <div className="tategaki-character tategaki-none">群<div className="furigana">かい</div></div>
                         <div className="tategaki-character tategaki-none">と</div>
                         <div className="tategaki-character tategaki-none">い</div>
                         <p>
@@ -109,7 +108,7 @@ export default function Title({ content = "" }) {
 }
 
 
-export function Doc({ content = "" }) {
+export function Doc({ content = "",title = "" }) {
     const { height, width } = useWindowDimensions();
     const [containerHeight, setCHeight] = useState();
     let text = "開發者札記開發者札記開發者札記開發者札記";
@@ -243,10 +242,12 @@ export function Doc({ content = "" }) {
     return (
          
                 <div className="container">
-                    {/* <h1 id="大声大会" style="margin-block-start: 0px;"><div className="tategaki-character tategaki-none">大</div><div className="tategaki-character tategaki-none">声</div><div className="tategaki-character tategaki-none">大</div><div className="tategaki-character tategaki-none">会</div></h1> */}
-                    <h1 id="大声大会" style={{ marginBlockStart: "0px" }}>
+                    {/* <h1 id="開源社群" style="margin-block-start: 0px;"><div className="tategaki-character tategaki-none">大</div><div className="tategaki-character tategaki-none">声</div><div className="tategaki-character tategaki-none">大</div><div className="tategaki-character tategaki-none">会</div></h1> */}
+                    <h1 id="開源社群" style={{ marginBlockStart: "0px" }}>
                         {/* <div className="tategaki-character tategaki-none">開</div> */}
-                        {DocItem("說明"+"\n")}
+                        {/* {DocItem("說明"+"\n")} */}
+                        {DocItem(title+ "\n")}
+
                         {/* {TextItem("大", 0)}
                         {TextItem("1", 0)}
                         {TextItem("B", 0)}

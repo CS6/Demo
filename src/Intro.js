@@ -14,7 +14,7 @@ export default function Intro({ children }) {
       <div className={`fullscreen bg ready"} ${clicked && "clicked"}`}>
           
         <div className="stack">
-          <Doc/>
+          {/* <Doc/> */}
         <Title/>
           <a  className="Enter SimSun"  href="#" onClick={() => setClicked(true)}>
            <h2> {"請您稍等一會...."}</h2>

@@ -1,7 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './App';
+// import App from './App';
+// import App from './3DScene/inPage/App'
+import WebBook from './3DScene/inPage/WebBook'
+import WebuseSplineAppBook from './3DScene/inPage/useSplineApp'
+
+
+
+
 import DMarquee from './DMarquee';
 import DocumentPaper from './DocumentPaper';
 import reportWebVitals from './reportWebVitals';
@@ -16,6 +23,8 @@ root.render(
         <div class="background-img">
           我是全域背景
         </div>
+        {/* <WebuseSplineAppBook/> */}
+        {/* <WebBook/> */}
         <DocumentPaper />
         {/* {/* <BackgroundPaper/> */}
         {/* <div className="placeholder">im 85xp</div> */}
@@ -24,10 +33,10 @@ root.render(
       {/* <App /> */}
     </Intro>
     <Footer
-      date="10. January"
+      date="30. May"
       year="2022"
-      link1={<a href="https://github.com/dayuan/drei">dayuan/drei</a>}
-      link2={<a href="https://codesandbox.io/s/0mgum">s/0mgum</a>}
+      link1={<a href="https://github.com/dayuan/Demo">dayuan/Demo</a>}
+      link2={<a href="https://codesandbox.io/s/duo-ge-demotheatre-iphone-reflector-variant-pf-demo-forked-2x4mw7">Code Lab</a>}
     />
 
   </React.StrictMode>
